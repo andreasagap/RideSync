@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Motor Communication</string>
+    <string name="gps_network_not_enabled">Kindly Enable GPS to continue</string>
+    <string name="open_location_settings">Go to Location Settings</string>
+    <string name="Cancel">Cancel</string>
+    <string name="gps_network_not_enabled_title">GPS Disabled</string>
+    <string name="select_device_title">Select your friend\'s device</string>
+    <string name="select_device_row_selection">Select</string>
+    <string name="welcome_title">Welcome to RideSync</string>
+    <string name="welcome_subtitle">Rev up your motor experience with our cutting-edge app!</string>
+    <string name="notification_communication_txt">Communication</string>
+    <string name="gps_status_msg">Your GPS seems to be disabled, do you want to enable it?</string>
+    <string name="wifi_status_msg">Your WiFi seems to be disabled, do you want to enable it?</string>
+    <string name="start_btn">Let\'s start</string>
+</resources>

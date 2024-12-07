@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/introFragment">
+
+    <fragment
+        android:id="@+id/introFragment"
+        android:name="gr.andreasagap.moto.communication.presentation.fragments.IntroFragment"
+        tools:layout="@layout/fragment_intro" >
+        <action
+            android:id="@+id/action_introFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="gr.andreasagap.moto.communication.presentation.fragments.SearchFragment"
+        tools:layout="@layout/fragment_search_device" >
+        <action
+            android:id="@+id/action_searchFragment_to_callFragment"
+            app:destination="@id/callFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/callFragment"
+        android:name="gr.andreasagap.moto.communication.presentation.fragments.CallFragment"
+        tools:layout="@layout/fragment_call" />
+</navigation>

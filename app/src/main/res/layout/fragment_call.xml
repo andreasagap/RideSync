@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/helmetImageView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_helmet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="180dp"
+        android:background="@drawable/circle_shape"
+        android:backgroundTint="@color/green"
+        android:src="@drawable/ic_success"
+        app:layout_constraintBottom_toBottomOf="@+id/helmetImageView"
+        app:layout_constraintEnd_toEndOf="@+id/helmetImageView"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/helmetImageView"
+        app:layout_constraintTop_toTopOf="@+id/helmetImageView"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <gr.andreasagap.moto.communication.SiriVisualView
+        android:id="@+id/waveVisualizerPanel"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:maxHeight="200dp"
+        app:layout_constraintBottom_toTopOf="@+id/closeCallView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/helmetImageView" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/closeCallView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/circle_shape"
+        android:backgroundTint="@color/red"
+        android:padding="20dp"
+        android:src="@drawable/ic_end_call"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
